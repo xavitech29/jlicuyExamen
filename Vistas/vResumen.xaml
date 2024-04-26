@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jlicuyExamen.Vistas.vResumen"
+             Title="vResumen">
+    <VerticalStackLayout>
+
+        <Grid Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Text="Nombre:" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="nombreEntry" Grid.Row="0" Grid.Column="1" IsReadOnly="True"/>
+
+            <Label Text="Apellido:" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="apellidoEntry" Grid.Row="1" Grid.Column="1" IsReadOnly="True"/>
+
+            <Label Text="Edad:" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="edadEntry" Grid.Row="2" Grid.Column="1" IsReadOnly="True"/>
+
+            <Label Text="Fecha:" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="fechaEntry" Grid.Row="3" Grid.Column="1" IsReadOnly="True"/>
+
+            <Label Text="País:" Grid.Row="4" Grid.Column="0"/>
+            <Entry x:Name="paisEntry" Grid.Row="4" Grid.Column="1" IsReadOnly="True"/>
+
+            <Label Text="Ciudad:" Grid.Row="5" Grid.Column="0"/>
+            <Entry x:Name="ciudadEntry" Grid.Row="5" Grid.Column="1" IsReadOnly="True"/>
+
+            <Label Text="Monto Inicial:" Grid.Row="6" Grid.Column="0"/>
+            <Entry x:Name="montoInicialEntry" Grid.Row="6" Grid.Column="1" IsReadOnly="True"/>
+
+            <Label Text="Pago Mensual:" Grid.Row="7" Grid.Column="0"/>
+            <Entry x:Name="pagoMensualEntry" Grid.Row="7" Grid.Column="1" IsReadOnly="True"/>
+
+            
+
+            <Button Text="Cerrar Sesión"
+                    x:Name="Salir"
+        Grid.Row="8"
+        Grid.Column="1"
+        HorizontalOptions="End"
+        Clicked="Salir_Clicked"/>
+
+        </Grid>
+        
+        
+
+    </VerticalStackLayout>
+</ContentPage>
